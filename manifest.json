@@ -1,0 +1,14 @@
+{
+    "name": "Dev Hooks",
+    "description": "Solution Blog",
+    "version": "0.0.1",
+    "homepage_url": "https://devhooks.in/",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "logo-128.png"
+    },
+    "icons": {
+        "128": "logo-128.png"
+    }
+}
