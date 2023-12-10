@@ -1,6 +1,6 @@
 {
     "name": "Dev Hooks",
-    "description": "Devhooks is a powerful search extension designed to enhance the browsing experience of the Devhooks.in website. This intuitive extension offers users an efficient way to explore and navigate the vast array of resources available on the site. With its user-friendly interface and comprehensive search functionalities, Devhooks enables quick access to specific content, tutorials, articles, and more, streamlining the process of finding relevant information within the platform. Whether seeking coding insights, development tips, or valuable programming resources, Devhooks' search extension provides an efficient and effective means to discover and access the desired content seamlessly.",
+    "description": "Devhooks is a powerful search extension designed to enhance the browsing experience of the Devhooks.in website.",
     "version": "0.0.1",
     "homepage_url": "https://devhooks.in/",
     "manifest_version": 3,
