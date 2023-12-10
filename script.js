@@ -4,6 +4,7 @@ fetch('https://devhooks.in/api/getarticles')
     .then(pData => {
         postsData = pData;        
 });
+
 document.getElementById('devsearch').addEventListener("keyup", (event) => {
     const resultElement = document.getElementById('result');
     resultElement.innerHTML = '';
@@ -45,8 +46,13 @@ document.getElementById('devsearch').addEventListener("keyup", (event) => {
         catpostsData.map((postData, index) => {
             posts.push({ title: postData.title, id: postData.id });
         });
-        posts.forEach(function (data, index) {
-            resultElement.innerHTML += '<li><a href="https://devhooks.in/blog/'+data.id+'" title="'+data.title+'" target="_blank">'+data.title+'</a></li>';
-        });
+        if(Object.keys(posts).length == 0){
+            resultElement.innerHTML += '<li>No Record Found</li>';
+        } else {
+            posts.forEach(function (data, index) {
+                resultElement.innerHTML += '<li><a href="https://devhooks.in/blog/'+data.id+'" title="'+data.title+'" target="_blank">'+data.title+'</a></li>';
+            });
+        }
+                
     }
 });
